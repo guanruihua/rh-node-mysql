@@ -1,0 +1,32 @@
+{
+  "name": "rh-node-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node-dev --respawn --transpile-only ./src/test/index.ts",
+    "restart": "rimraf dist && npm run build && npm start",
+    "start": "node ./dist/index.js",
+    "prod": "npm run build && npm run start",
+    "pub": "npm publish"
+  },
+  "keywords": [
+    "mysql",
+    "node",
+    "rh"
+  ],
+  "author": "ruihuag",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "node-notifier": "^8.0.2",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
