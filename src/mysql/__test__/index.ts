@@ -1,7 +1,7 @@
-import * as _ from '../index'
+import { Mysql } from '../index'
 
 console.log('--------------')
-const db: _.RHMysql = new _.RHMysql('test_db', 'ruihuag')
+const db:Mysql = new Mysql('test_db', 'ruihuag')
 
 // db.sql().then((res: any): void => {
 //   console.log(res)

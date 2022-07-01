@@ -1,7 +1,7 @@
 import * as mysql from 'mysql'
 import { createTableSql, addOneSql, updateSql, deleteSql } from './config'
 
-export class RHMysql {
+export class Mysql {
   connection: any
   constructor(
     database: string = 'db',
